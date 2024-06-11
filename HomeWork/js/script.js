@@ -78,10 +78,24 @@ switch (month) {
 
 //Зробіть сервіс який отримує тризначне число
 //Поверніть користувачу сумму цих чисел
-/* let sum;
-const value = prompt("введіть тризначне число");
-if (value <100 && value <= 999) {
-    
-    
+let sum = 0;
+let value;
+ value = Number(prompt("введіть перше число"));
+if (value >= 100 && value <= 999) {
+    sum += value;
+} else {
+    alert("Помилка");
 }
-alert(`сума числа яке ви ввели буде ${sum}`); */
+value = Number(prompt("введіть друге число"));
+if (value >= 100 && value <= 999) {
+    sum += value;  
+}else {
+    alert("Помилка");
+}
+value = Number(prompt("введіть третє число"));
+if (value >= 100 && value <= 999) {
+    sum += value;
+} else {
+    alert("Помилка");
+}
+alert(`сума числа яке ви ввели буде ${sum}`);
